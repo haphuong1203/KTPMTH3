@@ -12,7 +12,9 @@ import java.util.Set;
 @Getter
 @Setter
 public class Role extends BaseEntity {
+
     private String roleName;
+
     private String roleKey;
 
     @OneToMany(cascade = CascadeType.REFRESH, fetch = FetchType.EAGER)

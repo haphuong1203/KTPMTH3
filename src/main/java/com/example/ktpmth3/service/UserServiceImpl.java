@@ -1,5 +1,6 @@
 package com.example.ktpmth3.service;
 
+import com.example.ktpmth3.authen.UserPrincipal;
 import com.example.ktpmth3.entity.User;
 import com.example.ktpmth3.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,6 +47,5 @@ public class UserServiceImpl implements UserService {
         return userPrincipal;
 
     }
-
 
 }

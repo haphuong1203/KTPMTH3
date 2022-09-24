@@ -1,5 +1,6 @@
 package com.example.ktpmth3.util;
 
+import com.example.ktpmth3.authen.UserPrincipal;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nimbusds.jose.*;
 import com.nimbusds.jose.crypto.MACSigner;

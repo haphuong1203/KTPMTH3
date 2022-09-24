@@ -11,12 +11,10 @@ import javax.persistence.Table;
 @Table(name = "t_permission")
 @Getter
 @Setter
-public class Permission extends BaseEntity{
+public class Permission extends BaseEntity {
+
     private String permissionName;
 
     private String permissionKey;
-
-
-
 
 }

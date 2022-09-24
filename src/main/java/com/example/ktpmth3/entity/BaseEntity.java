@@ -4,7 +4,6 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
-import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
@@ -17,7 +16,8 @@ import java.util.Date;
 @Setter
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
-public class BaseEntity implements Serializable {
+public abstract class BaseEntity implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,8 +26,7 @@ public class BaseEntity implements Serializable {
     private String deleted;
 
     @CreatedDate
-
-    private Date createdArt;
+    private Date createdAt;
 
     @LastModifiedDate
     private Date updatedAt;
@@ -35,7 +34,4 @@ public class BaseEntity implements Serializable {
     private Long createdBy;
 
     private Long updatedBy;
-
-
-
 }

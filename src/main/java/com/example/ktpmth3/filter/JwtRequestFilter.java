@@ -1,5 +1,6 @@
 package com.example.ktpmth3.filter;
 
+import com.example.ktpmth3.authen.UserPrincipal;
 import com.example.ktpmth3.entity.Token;
 import com.example.ktpmth3.service.TokenService;
 import com.example.ktpmth3.util.JwtUtil;
@@ -18,9 +19,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 @Component
 public class JwtRequestFilter extends OncePerRequestFilter {

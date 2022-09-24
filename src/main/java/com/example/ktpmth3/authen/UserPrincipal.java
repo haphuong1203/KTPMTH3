@@ -7,6 +7,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 
 
+
+
 @Getter@Setter
 public class UserPrincipal implements UserDetails {
     private Long userId;
